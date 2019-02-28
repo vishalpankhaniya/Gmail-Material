@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>work-2</title>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="main-div">
+		<img src="images/logo.png" class="logo">
+    <h1 class="signin">Sign In</h1>
+    <content class="Text-2">to continue to Gmail</content>
+
+    <div class="mdc-text-field mdc-text-field--outlined field1">
+      <input type="text" id="tf-outlined" class="mdc-text-field__input">
+      <div class="mdc-notched-outline">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+          <label for="tf-outlined" class="mdc-floating-label">Email or phone</label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+      </div>
+    </div>
+
+    <div class="mdc-text-field mdc-text-field--outlined field2">
+      <input type="text" id="tf-outlined" class="mdc-text-field__input">
+      <div class="mdc-notched-outline">
+        <div class="mdc-notched-outline__leading"></div>
+        <div class="mdc-notched-outline__notch">
+          <label for="tf-outlined" class="mdc-floating-label">Enter your password</label>
+        </div>
+        <div class="mdc-notched-outline__trailing"></div>
+      </div>
+    </div>
+
+    <a href="#" class="forgot">Forgot email?</a>
+
+    <p>
+     Not your computer? Use Guest mode to sign in privately.
+   </p> 
+
+   <a class="forgot" href="https://support.google.com/chrome/answer/6130773?hl=en" jsname="JFyozc">Learn more</a>
+
+   <a href="signup.html"><span class="forgot" id="account">Create account</span></a>
+
+   <button class="mdc-button btn-1">
+    <span class="mdc-button__label">Next</span>
+  </button>
+</div>
+
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.field1'));
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.field2'));
+</script>
+<script type="text/javascript" src="javascript/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>work-2</title>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div class="main-div-signup">
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-8">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <img src="images/logo.png" class="logo" style="float: left;">
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <h1 class="signin" style="float: left;">Create your Google Account</h1>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <content class="Text-2" style="float: left;">to continue to Gmail</content>
+            </div>
+          </div>
+          <form action="personal.html">
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-6">
+                <div class="mdc-text-field mdc-text-field--outlined firstname">
+                  <input type="text" id="tf-outlined" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="tf-outlined" class="mdc-floating-label">First name</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell--span-6">
+                <div class="mdc-text-field mdc-text-field--outlined lastname">
+                  <input type="text" id="tf-outlined" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="tf-outlined" class="mdc-floating-label">Last name</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12">
+                <div class="mdc-text-field mdc-text-field--outlined username">
+                  <input type="text" id="tf-outlined" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="tf-outlined" class="mdc-floating-label">Username</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell--span-12">
+                <p style="float:left;margin: 0;">You can use letters, numbers & periods</p>
+              </div>
+            </div>
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-5">
+                <div class="mdc-text-field mdc-text-field--outlined pass1">
+                  <input type="text" id="tf-outlined" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="tf-outlined" class="mdc-floating-label">Password</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell--span-5">
+                <div class="mdc-text-field mdc-text-field--outlined pass2">
+                  <input type="text" id="tf-outlined" class="mdc-text-field__input">
+                  <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                      <label for="tf-outlined" class="mdc-floating-label">Confirm</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mdc-layout-grid__cell--span-2">
+                <i class="far fa-eye-slash fa-2x" style="margin-top: 34px;margin-left:-47px;"></i>
+              </div>
+
+              <div class="mdc-layout-grid__cell--span-12">
+                <p style="float:left;margin: 0;">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+              </div>
+            </div>
+            <a href="index.html"><span class="forgot" id="account">Sign in instead</span></a>
+
+            <button type="submit" class="mdc-button btn-1" style="margin-left:371px;">
+              <span class="mdc-button__label">Next</span>
+            </button>
+          </div>
+        </form>
+        <div class="mdc-layout-grid__cell--span-3">
+          <figure>
+            <img src="images/account.svg" width="244" height="244">
+          </figure>
+          <p class="caption">One account. All of Google working for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.firstname'));
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.lastname'));
+  textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.username'));
+   textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.pass1'));
+    textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.pass2'));
+</script>
+  <script type="text/javascript" src="javascript/custom.js"></script>
+</body>
+</html>

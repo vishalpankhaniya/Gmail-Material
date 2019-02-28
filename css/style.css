@@ -1,0 +1,121 @@
+.logo{
+	width: 74px;
+}
+.signin{
+	font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.3333;
+}
+.Text-2{
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: .1px;
+	line-height: 1.5;
+	text-align: center;
+	color: #202124;
+	font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	margin-bottom: 20px;
+}
+.btn-1{
+	background-color:#1a73e8 !important;
+	height: 36px !important;
+	width: 88px !important; 
+	color: white !important;
+	text-transform: none;
+	font-weight: 500 !important;
+	margin-left: 280px;
+	margin-top: -77px;
+
+}
+.field1{
+	width: 366px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+.field2{
+	width:366px;
+	margin-bottom: 20px;
+}
+.main-div{
+	padding: 48px 40px 36px;
+	border: 1px solid #D3D3D3;
+	border-radius: 10px;
+	height: auto;
+	width: 448px;
+	text-align: center;
+	left:0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.forgot{
+	border-radius: 4px;
+	color: #1a73e8;
+	display: inline-block;
+	font-weight: 500;
+	letter-spacing: .25px;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	float:left;
+	margin-bottom: 10px;
+	margin-left: 47px;
+	width: 100%;
+}
+body{
+	direction: ltr;
+	font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.4286;
+	margin:0;
+	padding:0; 
+}
+#account{
+	margin-top: 51px;
+}
+.main-div-signup{
+
+	padding: 8px 28px 1px;
+	border: 1px solid #D3D3D3;
+	border-radius: 10px;
+	height: auto;
+	width: 748px;
+	text-align: center;
+	left:0;
+	right: 0;
+	top:0;
+	bottom:0;
+	margin:0 auto;
+	margin-top: 40px;
+
+}
+.username{
+	width: 100%;
+	padding-top:10px;
+
+}
+.caption{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 117%;
+    margin-left: 70px;
+}
+.caption2{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    width: 167%;
+}
+.pass1{
+	padding-top:20px;
+}
+.pass2{
+	padding-top:20px;
+}

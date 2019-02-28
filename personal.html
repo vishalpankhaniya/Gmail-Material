@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>work-2</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="main-div-signup">
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-8">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <img src="images/logo.png" class="logo" style="float: left;">
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <h1 class="signin" style="float: left;">Vishal,Welcome To Google</h1>
+            </div>
+            <div class="mdc-layout-grid__cell--span-12">
+              <i class="far fa-user-circle fa-2x" style="float: left;color:#1a73e8"></i>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              <content class="Text-2" style="float: left;">vishal.pankhaniya@gmail.com</content>
+            </div>
+          </div>
+
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-3">
+              <div class="mdc-select mdc-select--outlined">
+                <!-- Other elements from the native or enhanced select remain. -->
+                <div class="mdc-select country">
+                  <i class="mdc-select__dropdown-icon"></i>
+                  <select class="mdc-select__native-control">
+                    <option value=""></option>
+                    <option value="1" >India</option>
+                    <option value="2">US</option>
+                    <option value="2">Australia</option>
+                  </select>
+                  <div class="mdc-line-ripple"></div>
+                </div>
+
+                <div class="mdc-notched-outline">
+                 <div class="mdc-notched-outline__leading"></div>
+                 <div class="mdc-notched-outline__notch">
+                   <label class="mdc-floating-label">Country</label>
+                 </div>
+                 <div class="mdc-notched-outline__trailing"></div>
+               </div>
+             </div>
+           </div>
+           <div class="mdc-layout-grid__cell--span-9">
+            <div class="mdc-text-field mdc-text-field--outlined lastname phone" style="width: 100%;">
+              <input type="text" id="tf-outlined" class="mdc-text-field__input">
+              <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                  <label for="tf-outlined" class="mdc-floating-label">Phone number (optional)</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-12">
+            <div class="mdc-text-field mdc-text-field--outlined username recovery">
+              <input type="text" id="tf-outlined" class="mdc-text-field__input">
+              <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                  <label for="tf-outlined" class="mdc-floating-label">Recovery email address (optional)</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell--span-12">
+            <p style="float:left;margin: 0;">We’ll use it to keep your account secure</p>
+          </div>
+        </div>
+
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-4">
+           <div class="mdc-select mdc-select--outlined">
+            <!-- Other elements from the native or enhanced select remain. -->
+            <div class="mdc-select month">
+              <i class="mdc-select__dropdown-icon"></i>
+              <select class="mdc-select__native-control">
+                <option value="" disabled selected></option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option> 
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <div class="mdc-line-ripple"></div>
+            </div>
+
+            <div class="mdc-notched-outline">
+             <div class="mdc-notched-outline__leading"></div>
+             <div class="mdc-notched-outline__notch">
+               <label class="mdc-floating-label">Month</label>
+             </div>
+             <div class="mdc-notched-outline__trailing"></div>
+           </div>
+         </div>
+       </div>
+       <div class="mdc-layout-grid__cell--span-4">
+        <div class="mdc-text-field mdc-text-field--outlined day">
+          <input type="text" id="tf-outlined" class="mdc-text-field__input">
+          <div class="mdc-notched-outline">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__notch">
+              <label for="tf-outlined" class="mdc-floating-label">Day</label>
+            </div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdc-layout-grid__cell--span-4">
+        <div class="mdc-text-field mdc-text-field--outlined year">
+          <input type="text" id="tf-outlined" class="mdc-text-field__input">
+          <div class="mdc-notched-outline">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__notch">
+              <label for="tf-outlined" class="mdc-floating-label">Year</label>
+            </div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdc-layout-grid__cell--span-12">
+        <p style="float:left;margin: 0;">Your birthday</p>
+      </div>
+    </div>
+
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-12">
+        <div class="mdc-select gender"  style="width: 100%;border:1px solid lightgrey">
+          <i class="mdc-select__dropdown-icon"></i>
+          <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Others</option>
+          </select>
+          <label class="mdc-floating-label">Gender</label>
+        </div>
+      </div>
+    </div>
+    
+    <span class="forgot" id="account">Why We ask for this information Back</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-3">
+    <figure>
+      <img src="images/personal.svg" width="244" height="244">
+    </figure>
+    <p class="caption2">Your personal info is private & safe.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.day'));
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.year'));
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.recovery'));
+ textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.phone'));
+ select = mdc.select.MDCSelect.attachTo(document.querySelector('.month'));
+ select = mdc.select.MDCSelect.attachTo(document.querySelector('.gender'));
+</script>
+<script type="text/javascript" src="javascript/custom.js"></script>
+</body>
+</html>
