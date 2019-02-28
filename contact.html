@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gmail</title>
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<header class="mdc-top-app-bar">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+				<a class="mdc-top-app-bar__navigation-icon" href="javascript:void(0)">
+					<i class="material-icons">menu</i>
+				</a>
+				<a class="mdc-top-app-bar__title catalog-title" href="https://mail.google.com" target="_blank" style="color: inherit;">
+					<!-- <img src="images/logo.png"> -->
+					Webdenim
+				</a>
+			</section>
+		</div>
+	</header>
+
+	<div class="app-drawer-layout mdc-top-app-bar--fixed-adjust">
+		<!-- Drawer -->
+		<aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
+			<nav class="mdc-drawer__drawer">
+				<nav class="mdc-drawer__content mdc-list-group">
+					<div id="icon-with-text-demo" class="mdc-list">
+						<a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+						</a>
+					</div>
+
+					<hr class="mdc-list-divider">
+
+					<div class="mdc-list">
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="#">
+							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam
+						</a>
+						<a class="mdc-list-item demo-drawer-list-item" href="index.html">
+							<i class="fas fa-sign-out-alt fa-2x" aria-hidden="true"></i> Sign-Out
+						</a>
+					</div>
+				</nav>
+			</nav>
+		</aside>
+		<main class="mdc-drawer-app-content main-content">
+			<div class="mdc-card contact-div">
+				<body class="mdc-typography">
+					<h1 class="mdc-typography--headline4" style="font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;">Contact Us</h1>
+
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell--span-12">
+							<div class="mdc-text-field mdc-text-field--outlined firstname" style="width: 100%;">
+								<input type="text" id="tf-outlined" class="mdc-text-field__input">
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label for="tf-outlined" class="mdc-floating-label">User Name</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-12">
+							<div class="mdc-text-field mdc-text-field--outlined lastname"  style="width: 100%;">
+								<input type="text" id="tf-outlined" class="mdc-text-field__input">
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label for="tf-outlined" class="mdc-floating-label">User Email</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-12">
+							<div class="mdc-text-field mdc-text-field--textarea message"   style="width: 100%;">
+								<textarea id="textarea" class="mdc-text-field__input" rows="5" cols="40"></textarea>
+								<div class="mdc-notched-outline">
+									<div class="mdc-notched-outline__leading"></div>
+									<div class="mdc-notched-outline__notch">
+										<label for="textarea" class="mdc-floating-label">Your Message</label>
+									</div>
+									<div class="mdc-notched-outline__trailing"></div>
+								</div>
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell--span-12">
+							<button class="mdc-button btn-2">
+								<span class="mdc-button__label">submit</span>
+							</button>
+						</div>
+					</div>
+				</body>
+			</div>
+		</main>
+		<script type="text/javascript">
+
+			const drawerEl = document.querySelector('.mdc-drawer');
+			const drawer = new mdc.drawer.MDCDrawer.attachTo(drawerEl);
+			const topAppBarEl = document.querySelector('.mdc-top-app-bar');
+			const topAppBar = new mdc.topAppBar.MDCTopAppBar.attachTo(topAppBarEl);
+
+			topAppBar.setScrollTarget(document.querySelector('.main-content'));
+			topAppBar.listen('MDCTopAppBar:nav', () => {
+				drawer.open = !drawer.open;
+			});
+
+			textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.firstname'));
+			textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.lastname'));
+			textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.message'));
+
+
+		</script>
+	</body>
+	</html>
