@@ -1,0 +1,68 @@
+ngOnInit(): void {
+this.signupForm = new FormGroup({
+'testingId': new FormControl(null),
+});
+
+}
+
+ngAfterViewInit() {
+this.cus_selectize('testing');
+}
+
+cus_selectize(s_id) {
+($("#" + s_id) as any).selectize({
+valueField: "testingId",
+placeholder: "Search testing...",
+labelField: "description",
+searchField: ["description"],
+loadingClass: 'Loading..',
+hideSelected: true,
+highlight: true,
+// create: true, // We could create new testings on the go
+onChange: function (value) {
+console.log(value);
+},
+render: {
+option: function (item, escape) {
+return '<option class="testing_selectize">' + escape(item.testingId) + ' - ' + escape(item.description) + '</div>';
+},
+},
+load: function (query, callback) {
+if (!query.length) return callback();
+this.clearCache();
+$.ajax({
+url: 'http://localhost:3000/testing',
+type: "GET",
+error: function () {
+callback();
+console.log("Error");
+},
+success: function (res) {
+if (res) {
+// var this_result = JSON.parse(res); // If its not returning json
+var this_result = res;
+callback(this_result);
+}
+},
+});
+},
+onInitialize: function(){
+var selectize = this;
+$.get("http://localhost:3000/testing", function( data ) {
+selectize.addOption(data); // This is will add to option
+var selected_items = [];
+$.each(data, function( i, obj) {
+selected_items.push(obj.id);
+});
+selectize.setValue(selected_items); //this will set option values as default
+});
+}
+});
+}
+
+Please contact me here
+https://join.skype.com/invite/ynMsPF4ISOUH
+
+google meet
+
+https://meet.google.com/uvi-vqav-xxw
