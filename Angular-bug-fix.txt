@@ -1,3 +1,9 @@
+Please contact me here
+https://join.skype.com/invite/ynMsPF4ISOUH
+
+google meet
+https://meet.google.com/uvi-vqav-xxw
+
 ngOnInit(): void {
 this.signupForm = new FormGroup({
 'testingId': new FormControl(null),
@@ -60,9 +66,4 @@ selectize.setValue(selected_items); //this will set option values as default
 });
 }
 
-Please contact me here
-https://join.skype.com/invite/ynMsPF4ISOUH
 
-google meet
-
-https://meet.google.com/uvi-vqav-xxw
