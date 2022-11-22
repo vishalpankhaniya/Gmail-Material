@@ -16,7 +16,7 @@ this.cus_selectize('testing');
 }
 
 cus_selectize(s_id) {
-($("#" + s_id) as any).selectize({
+(window['$']("`#${s_id}`") as any).selectize({
 valueField: "testingId",
 placeholder: "Search testing...",
 labelField: "description",
@@ -36,7 +36,7 @@ return '<option class="testing_selectize">' + escape(item.testingId) + ' - ' + e
 load: function (query, callback) {
 if (!query.length) return callback();
 this.clearCache();
-$.ajax({
+window['$'].ajax({
 url: 'http://localhost:3000/testing',
 type: "GET",
 error: function () {
@@ -54,10 +54,10 @@ callback(this_result);
 },
 onInitialize: function(){
 var selectize = this;
-$.get("http://localhost:3000/testing", function( data ) {
+window['$'].get("http://localhost:3000/testing", function( data ) {
 selectize.addOption(data); // This is will add to option
 var selected_items = [];
-$.each(data, function( i, obj) {
+window['$'].each(data, function( i, obj) {
 selected_items.push(obj.id);
 });
 selectize.setValue(selected_items); //this will set option values as default
